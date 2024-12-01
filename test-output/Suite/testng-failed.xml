@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.Hash.e_invoice.TC4_PhaseSelection">
+        <methods>
+          <include name="T02_EnterEmail"/>
+          <include name="setup"/>
+          <include name="T05_SelectPhase2"/>
+          <include name="teardown"/>
+          <include name="T06_ClickOnContinue"/>
+          <include name="T03_EnterPassword"/>
+          <include name="T04_ClickOnSignIn"/>
+          <include name="T01_NavigateToURL"/>
+        </methods>
+      </class> <!-- com.Hash.e_invoice.TC4_PhaseSelection -->
+      <class name="com.Hash.e_invoice.TC5_AddDevice">
+        <methods>
+          <include name="T18_ClickOnSave"/>
+          <include name="T07_EnterSerialNumber"/>
+          <include name="T08_EnterDeviceName"/>
+          <include name="T01_NavigateToURL"/>
+          <include name="T15_SelectEntity"/>
+          <include name="T09_EnterCommonName"/>
+          <include name="T03_EnterPassword"/>
+          <include name="T10_EnterOrgUnitName"/>
+          <include name="T05_AddEntity"/>
+          <include name="T16_EnterOTP"/>
+          <include name="setup"/>
+          <include name="T06_EnterEmail"/>
+          <include name="T14_SelectInvoiceType"/>
+          <include name="T02_EnterEmail"/>
+          <include name="T13_EnterBuissSector"/>
+          <include name="teardown"/>
+          <include name="T17_UploadLogo"/>
+          <include name="T04_ClickOnSignIn"/>
+          <include name="T20_ClickOnContinue"/>
+          <include name="T19_ClickOnContinue"/>
+        </methods>
+      </class> <!-- com.Hash.e_invoice.TC5_AddDevice -->
+      <class name="com.Hash.e_invoice.TC2_SignInTest">
+        <methods>
+          <include name="T04_ClickOnSignIn"/>
+          <include name="setup"/>
+          <include name="T03_EnterPassword"/>
+          <include name="T05_EnterOrgNmAR"/>
+          <include name="teardown"/>
+          <include name="T06_RegInputField"/>
+          <include name="T02_EnterEmail"/>
+        </methods>
+      </class> <!-- com.Hash.e_invoice.TC2_SignInTest -->
+      <class name="com.Hash.e_invoice.TC3_AddEntityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="T01_NavigateToURL"/>
+          <include name="T06_ClickCheeckBOX"/>
+          <include name="teardown"/>
+          <include name="T04_ClickOnSignIn"/>
+          <include name="T08_ClickOnContinue"/>
+          <include name="T02_EnterEmail"/>
+          <include name="T07_ClickOnSave"/>
+          <include name="T03_EnterPassword"/>
+          <include name="T05_AddEntity"/>
+        </methods>
+      </class> <!-- com.Hash.e_invoice.TC3_AddEntityTest -->
+      <class name="com.Hash.e_invoice.TC6_Customer">
+        <methods>
+          <include name="T08_InputRegNmEn"/>
+          <include name="T18_InputAdditionalStreetAr"/>
+          <include name="T34_InputJobTitleEn"/>
+          <include name="T25_InputPostalCode"/>
+          <include name="T22_InputDristicEn"/>
+          <include name="T06_ClickOnCreateNew"/>
+          <include name="T21_inputDistrictAr"/>
+          <include name="T14_InputAdditionalBuildingNumber"/>
+          <include name="T32_InputMiddleNameEn"/>
+          <include name="T19_InputCityAr"/>
+          <include name="T07_InputRegNmAr"/>
+          <include name="T02_EnterEmail"/>
+          <include name="T35_ClickOnSave"/>
+          <include name="T29_InputLastNameAr"/>
+          <include name="T30_InputLastNameEn"/>
+          <include name="T23_InputProvinceOrStateAr"/>
+          <include name="teardown"/>
+          <include name="T05_ClickOnCustomerTab"/>
+          <include name="T27_InputFirstNameAr"/>
+          <include name="T28_InputFirstNameEn"/>
+          <include name="T20_InputCityEn"/>
+          <include name="T10_InputCRN"/>
+          <include name="T13_InputBuildingNumber"/>
+          <include name="T12_InputPhoneNumber"/>
+          <include name="T16_InputStreetAddressEn"/>
+          <include name="T11_InputEmail"/>
+          <include name="T15_InputStreetAddress"/>
+          <include name="T26_ClicOnContactInformation"/>
+          <include name="T01_NavigateToURL"/>
+          <include name="T03_EnterPassword"/>
+          <include name="T33_InputJobTitleAr"/>
+          <include name="setup"/>
+          <include name="T24_InputProvinceOrStateEn"/>
+          <include name="T17_InputAdditionalStreetAr"/>
+          <include name="T31_InputMiddleNameAr"/>
+          <include name="T09_InputVatNumber"/>
+          <include name="T04_ClickOnSignIn"/>
+        </methods>
+      </class> <!-- com.Hash.e_invoice.TC6_Customer -->
+      <class name="com.Hash.e_invoice.TC1_SignUpTest">
+        <methods>
+          <include name="setup"/>
+          <include name="T02_ClickonSignUp"/>
+          <include name="T06_ClickingoncheckBox"/>
+          <include name="teardown"/>
+          <include name="T03_EnterEmail"/>
+          <include name="T04_EnterPassword"/>
+          <include name="T01_NavigateToURL"/>
+          <include name="T08_NavigateTOYopMail"/>
+          <include name="T07_ClickingOnCreateAccount"/>
+          <include name="T05_ConfirmPassword"/>
+        </methods>
+      </class> <!-- com.Hash.e_invoice.TC1_SignUpTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

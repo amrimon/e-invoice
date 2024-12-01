@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.Hash.e_invoice.TC1_SignUpTest"/>
+      <class name="com.Hash.e_invoice.TC2_SignInTest"/>
+      <class name="com.Hash.e_invoice.TC3_AddEntityTest"/>
+      <class name="com.Hash.e_invoice.TC4_PhaseSelection"/>
+      
+      <class name="com.Hash.e_invoice.TC5_AddDevice"/>
+     
+      <class name="com.Hash.e_invoice.TC6_Customer"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
