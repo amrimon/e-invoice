@@ -112,24 +112,10 @@ public class TC7_CreateSimplifiedInvoice extends CommonTest {
 	}
 	@Test
 	public void T16_InputUnit () throws InterruptedException{
-		
 	
-		
-		
-		
-		
 		driver.findElement(By.xpath("//div[contains(@class,'select unit-code')]")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("(//input[@type='search'])[9]")).sendKeys("inch");
-		//Thread.sleep(5000);
-		//driver.findElement(By.xpath("(//input[@type='search'])[9]")).submit();
-
-		//driver.findElement(By.xpath("//input[@aria-controls='rc_select_6_list']")).sendKeys("inch");
-		
-
-		//Thread.sleep(10000);
-		//driver.findElement(By.xpath("(//span[text()='inch'])[1]")).click();
-		//driver.findElement(By.xpath("//span[text()='Select Unit']")).sendKeys(Keys.ENTER);
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//div[contains(@class,'TAX-select')]")).click();
 		Thread.sleep(5000);
@@ -139,7 +125,7 @@ public class TC7_CreateSimplifiedInvoice extends CommonTest {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//span[text()='In Cash']")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//span[text()='Generate and Send']")).click();
+	    driver.findElement(By.xpath("//span[text()='Generate and Send']")).click();
 		Thread.sleep(5000);
 		
 	}
