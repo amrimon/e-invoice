@@ -15,11 +15,13 @@ public class TC1_SignUpTest extends CommonTest{
 	
 	@Test
 	public void T01_NavigateToURL() throws InterruptedException {
-		test = extent.createTest("Sample Test");
+		test = extent.createTest("Hash Functional Test");
 		driver.get("https://dev-ksa.einvoicesolutions.com/login");
 		Thread.sleep(10000);
 		Assert.assertTrue(driver.findElement(By.xpath("//h1[text()='Welcome Back']")).isDisplayed());
-		test.pass("Navigatetourl");
+		test.pass("NavigateToURL");
+		
+		
 	}
 	
 	@Test
@@ -29,6 +31,7 @@ public class TC1_SignUpTest extends CommonTest{
 		test.pass("ClickonSignUp");
 	}
 	
+	
 	@Test
     public void T03_EnterEmail() throws InterruptedException {
 		//int number = ThreadLocalRandom.current().nextInt(100, 1000);
@@ -37,29 +40,45 @@ public class TC1_SignUpTest extends CommonTest{
 		
 	driver.findElement(By.name("email")).sendKeys(Email);
 	Thread.sleep(2000);
-	test.pass("Navigatetourl");
+	test.pass("EnterEmail");
 	}
+	
+	
 	@Test
     public void T04_EnterPassword() throws InterruptedException {
 		driver.findElement(By.name("password")).sendKeys("Saimiscool1!");
-	Thread.sleep(2000);
+	    Thread.sleep(2000);
+	    test.pass("EnterPassword");
+	
 	}
+	
+	
+	
 	@Test
     public void T05_ConfirmPassword() throws InterruptedException {
 		driver.findElement(By.name("confirmPassword")).sendKeys("Saimiscool1!");
 		Thread.sleep(2000);
+		test.pass("ConfirmPassword");
 	}
+	
+	
 	@Test
-    public void T06_ClickingoncheckBox() throws InterruptedException {
+    public void T06_ClickingOnCheckBox() throws InterruptedException {
 		driver.findElement(By.className("ant-checkbox-input")).click();
         Thread.sleep(2000);
+        test.pass("ClickingOnCheckBox");
 	}
+	
+	
 	@Test
     public void T07_ClickingOnCreateAccount() throws InterruptedException {
 		driver.findElement(By.xpath("//span[text()='Create Account']")).click();
-
-		Thread.sleep(10000);
+        Thread.sleep(10000);
+        test.pass("ClickingOnCreateAccount");
 	}
+	
+	
+	
 	@Test
     public void T08_NavigateTOYopMail() throws InterruptedException {
 		
@@ -83,17 +102,15 @@ public class TC1_SignUpTest extends CommonTest{
 	Thread.sleep(5000);
 	driver.switchTo().frame(driver.findElement(By.id("ifmail")));  //switch to frame 
 	Thread.sleep(5000);
-	driver.findElement(By.linkText("Activate Account")).click();
+	driver.findElement(By.linkText("Verify Account")).click();
 	Thread.sleep(5000);
 	String SecondTab = driver.getWindowHandle(); 
 	Object[] windowHandles1=driver.getWindowHandles().toArray();//second way to switch tab
     driver.switchTo().window((String) windowHandles1[2]);
-   
     Thread.sleep(10000);
 
     driver.findElement(By.xpath("//span[text()='Sign In']")).click();
     Thread.sleep(10000);
-
-    
-	}
+    test.pass("YopmailVerification");
+    }
 }

@@ -27,7 +27,7 @@ public class CommonTest
 @BeforeSuite
 public void setup() throws InterruptedException {
 	int number = ThreadLocalRandom.current().nextInt(100, 1000);//Random number generator method
-	Email = "m"+number+"test.hash@yopmail.com";
+	Email = "am"+number+"test.hash@yopmail.com";
 	System.out.println(Email);
 	
 	System.setProperty("webdriver.chrome.driver", "driver/chromedriver");

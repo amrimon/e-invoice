@@ -3,19 +3,29 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Hash.e_invoice.TC7_CreateSimplifiedInvoice">
+      <class name="com.Hash.e_invoice.TC5_AddDevice">
         <methods>
+          <include name="T18_ClickOnSave"/>
+          <include name="T07_EnterSerialNumber"/>
+          <include name="T08_EnterDeviceName"/>
+          <include name="T15_SelectEntity"/>
+          <include name="T09_EnterCommonName"/>
+          <include name="T03_EnterPassword"/>
+          <include name="T10_EnterOrgUnitName"/>
+          <include name="T16_EnterOTP"/>
           <include name="setup"/>
-          <include name="T05_ClickOneInvoice"/>
+          <include name="T06_EnterEmail"/>
+          <include name="T14_SelectInvoiceType"/>
+          <include name="T05_AddDevice"/>
+          <include name="T02_EnterEmail"/>
+          <include name="T13_EnterBuissSector"/>
           <include name="teardown"/>
-          <include name="T06_ClickOnCreate"/>
-          <include name="T16_InputUnit"/>
-          <include name="T15_InputPrice"/>
-          <include name="T07_SelectOrganization"/>
-          <include name="T14_InputQantity"/>
-          <include name="T13_InputIteamName"/>
+          <include name="T17_UploadLogo"/>
+          <include name="T04_ClickOnSignIn"/>
+          <include name="T20_ClickOnContinue"/>
+          <include name="T19_ClickOnContinue"/>
         </methods>
-      </class> <!-- com.Hash.e_invoice.TC7_CreateSimplifiedInvoice -->
+      </class> <!-- com.Hash.e_invoice.TC5_AddDevice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

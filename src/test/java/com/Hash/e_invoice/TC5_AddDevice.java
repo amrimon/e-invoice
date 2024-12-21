@@ -17,13 +17,13 @@ public class TC5_AddDevice extends CommonTest{
 	}
 	@Test
 	public void T02_EnterEmail() throws InterruptedException {
-		driver.findElement(By.name("email")).sendKeys("m202test.hash@yopmail.com");
-		Thread.sleep(2000);
+		driver.findElement(By.name("email")).sendKeys("am431test.hash@yopmail.com");
+		Thread.sleep(5000);
 	}
 	@Test
 	public void T03_EnterPassword() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("Saimiscool1!");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 	@Test
 	public void T04_ClickOnSignIn() throws InterruptedException{
@@ -31,7 +31,7 @@ public class TC5_AddDevice extends CommonTest{
 		Thread.sleep(5000);
 	}
 	@Test
-	public void T05_AddEntity() throws InterruptedException {
+	public void T05_AddDevice() throws InterruptedException {
 		driver.findElement(By.xpath("//span[text()='Add Device']")).click();
 		Thread.sleep(5000);
 	}
@@ -94,9 +94,9 @@ public class TC5_AddDevice extends CommonTest{
 	@Test
 	public void T15_SelectEntity() throws InterruptedException{
 		
-		driver.findElement(By.xpath("(//input[@type='search'])[5]")).sendKeys("منظمة الصحة العالمية");
+		driver.findElement(By.xpath("(//input[@type='search'])[5]")).sendKeys("فاصيل الخاصة بك");
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("(//span[text()='منظمة الصحة العالمية'])")).click();
+		driver.findElement(By.xpath("(//span[text()='فاصيل الخاصة بك'])[1]")).click();
 		Thread.sleep(5000);
 	}
 	@Test

@@ -14,7 +14,7 @@ public class TC6_Customer extends CommonTest{
 	}
 	@Test
 	public void T02_EnterEmail() throws InterruptedException {
-		driver.findElement(By.name("email")).sendKeys("m299test.hash@yopmail.com");
+		driver.findElement(By.name("email")).sendKeys("m300test.hash@yopmail.com");
 		Thread.sleep(2000);
 	}
 	@Test
